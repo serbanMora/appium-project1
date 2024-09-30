@@ -28,6 +28,9 @@ public class CartPage extends AndroidActions{
 	@AndroidFindBy(id = "com.androidsample.generalstore:id/totalAmountLbl")
 	private WebElement totalPrice;
 	
+	@AndroidFindBy(id = "com.androidsample.generalstore:id/btnProceed")
+	private WebElement submit;
+	
 	public double getPriceSum() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOfAllElements(productPrice));
@@ -48,5 +51,9 @@ public class CartPage extends AndroidActions{
 		String text = totalPrice.getText().replaceAll("[^\\d.]", "");
 		double value = Double.parseDouble(text);
 		return value;
+	}
+	
+	public void submitOrder() {
+		submit.click();
 	}
 }

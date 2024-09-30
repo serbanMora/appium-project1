@@ -37,12 +37,16 @@ public class ProductCatalogue extends AndroidActions {
 			String prodText = productNames.get(i).getText();
 
 			while (prodText.equals(text)) {
-				wait.until(ExpectedConditions.visibilityOfAllElements(addToCart));
+				wait.until(ExpectedConditions.visibilityOf(addToCart.get(i)));
 				addToCart.get(i).click();
 				break;
 			}
 			if (!prodText.equals(text)) {
 				scrollToText(text);
+				if (prodText.equals(text)) {
+					wait.until(ExpectedConditions.visibilityOf(addToCart.get(i)));
+					addToCart.get(i).click();
+				}
 			}
 		}
 	}
