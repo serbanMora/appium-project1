@@ -46,15 +46,15 @@ public class FormPage extends AndroidActions {
 			femaleOption.click();
 		}
 	}
-	
+
 	public void setCountrySelection(String countryName) {
 		countrySelection.click();
 		scrollToText(countryName);
 		driver.findElement(By.xpath("//android.widget.TextView[@text='" + countryName + "']")).click();
 	}
-	
-	public void submitForm() {
+
+	public ProductCatalogue submitForm() {
 		shopButton.click();
-		
+		return new ProductCatalogue(driver);
 	}
 }

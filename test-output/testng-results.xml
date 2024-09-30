@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-27T16:50:29 EEST" name="Default suite" finished-at="2024-09-27T16:50:57 EEST" duration-ms="28801">
+  <suite started-at="2024-09-30T14:53:59 EEST" name="Default suite" finished-at="2024-09-30T14:54:20 EEST" duration-ms="20348">
     <groups>
     </groups>
-    <test started-at="2024-09-27T16:50:29 EEST" name="Default test" finished-at="2024-09-27T16:50:57 EEST" duration-ms="28801">
-      <class name="GeneralStore.TestCases.FormPageTest">
-        <test-method is-config="true" signature="configureAppiumTest()[pri:0, instance:GeneralStore.TestCases.FormPageTest@1ed4ae0f]" started-at="2024-09-27T16:50:29 EEST" name="configureAppiumTest" finished-at="2024-09-27T16:50:39 EEST" duration-ms="10212" status="PASS">
+    <test started-at="2024-09-30T14:53:59 EEST" name="Default test" finished-at="2024-09-30T14:54:20 EEST" duration-ms="20348">
+      <class name="GeneralStore.TestCases.test">
+        <test-method is-config="true" signature="configureAppiumTest()[pri:0, instance:GeneralStore.TestCases.test@2a265ea9]" started-at="2024-09-30T14:53:59 EEST" name="configureAppiumTest" finished-at="2024-09-30T14:54:08 EEST" duration-ms="8462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppiumTest -->
-        <test-method signature="test()[pri:0, instance:GeneralStore.TestCases.FormPageTest@1ed4ae0f]" started-at="2024-09-27T16:50:39 EEST" name="test" finished-at="2024-09-27T16:50:56 EEST" duration-ms="17615" status="PASS">
+        <test-method signature="tests()[pri:0, instance:GeneralStore.TestCases.test@2a265ea9]" started-at="2024-09-30T14:54:08 EEST" name="tests" finished-at="2024-09-30T14:54:19 EEST" duration-ms="11295" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GeneralStore.TestCases.FormPageTest@1ed4ae0f]" started-at="2024-09-27T16:50:56 EEST" name="tearDown" finished-at="2024-09-27T16:50:57 EEST" duration-ms="939" status="PASS">
+        </test-method> <!-- tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GeneralStore.TestCases.test@2a265ea9]" started-at="2024-09-30T14:54:19 EEST" name="tearDown" finished-at="2024-09-30T14:54:20 EEST" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- GeneralStore.TestCases.FormPageTest -->
+      </class> <!-- GeneralStore.TestCases.test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
