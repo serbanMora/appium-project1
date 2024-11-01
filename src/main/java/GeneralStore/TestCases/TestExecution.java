@@ -10,7 +10,7 @@ import GeneralStore.PageObject.ProductCatalogue;
 
 public class TestExecution extends BaseTest {
 
-	@Test(alwaysRun = true)
+	@Test(alwaysRun = true, enabled = true)
 	public void formPage() {
 		FormPage formPage = new FormPage(driver);
 		formPage.setName("Serban Mora");
@@ -19,7 +19,7 @@ public class TestExecution extends BaseTest {
 		formPage.submitForm();
 	}
 
-	@Test(alwaysRun = true, dependsOnMethods = "formPage")
+	@Test(alwaysRun = true, dependsOnMethods = "formPage", enabled = true)
 	public void productCatalogue() {
 		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
 		productCatalogue.addProductToCart("Air Jordan 4 Retro");
@@ -27,7 +27,7 @@ public class TestExecution extends BaseTest {
 		productCatalogue.goToCartPage();
 	}
 	
-	@Test(alwaysRun = true, dependsOnMethods = "productCatalogue")
+	@Test(alwaysRun = true, dependsOnMethods = "productCatalogue", enabled = true)
 	public void cartPage() {
 		CartPage cartPage = new CartPage(driver);
 		Assert.assertEquals(cartPage.getPriceSum(), cartPage.getTotalSum());
