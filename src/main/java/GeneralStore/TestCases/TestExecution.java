@@ -1,6 +1,7 @@
 package GeneralStore.TestCases;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import GeneralStore.Config.BaseTest;
@@ -14,16 +15,20 @@ public class TestExecution extends BaseTest {
 	ProductCatalogue productCatalogue;
 	CartPage cartPage;
 	
-	@Test(alwaysRun = true, enabled = true)
-	public void formPage() {
+	String name = "Serban Mora";
+	String gender = "male";
+	String country = "Argentina";
+	
+	@Test (dataProvider = "getData", alwaysRun = true, enabled = true)
+	public void formPage(String name, String gender, String country) {
 		formPage = new FormPage(driver);
-		formPage.setName("Serban Mora");
-		formPage.setGender("male");
-		formPage.setCountrySelection("Argentina");
+		formPage.setName(name);
+		formPage.setGender(gender);
+		formPage.setCountrySelection(country);
 		formPage.submitForm();
 	}
 
-	@Test(alwaysRun = true, dependsOnMethods = "formPage", enabled = true)
+	@Test (alwaysRun = true, dependsOnMethods = "formPage", enabled = true)
 	public void productCatalogue() {
 		productCatalogue = new ProductCatalogue(driver);
 		productCatalogue.addProductToCart("Air Jordan 4 Retro");
@@ -31,10 +36,21 @@ public class TestExecution extends BaseTest {
 		productCatalogue.goToCartPage();
 	}
 	
-	@Test(alwaysRun = true, dependsOnMethods = "productCatalogue", enabled = true)
+	@Test (alwaysRun = true, dependsOnMethods = "productCatalogue", enabled = true)
 	public void cartPage() {
 		cartPage = new CartPage(driver);
 		Assert.assertEquals(cartPage.getPriceSum(), cartPage.getTotalSum());
 		cartPage.submitOrder();
+	}
+	
+	@DataProvider
+	public Object[][] getData() {
+		Object[][] data = new Object[1][3];
+		
+		data[0][0] = name;
+		data[0][1] = gender;
+		data[0][2] = country;
+		
+		return data;
 	}
 }
