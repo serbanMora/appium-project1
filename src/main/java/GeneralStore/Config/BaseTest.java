@@ -15,20 +15,18 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 
 public class BaseTest extends BaseTestUtils {
 
-	public static AppiumDriverLocalService service;
-	public static AndroidDriver driver;
-	private static String build;
+	public AppiumDriverLocalService service;
+	public AndroidDriver driver;
+	private String build;
 
-	@BeforeClass(alwaysRun = true)
-	public void configureAppiumTest() throws IOException {
+	@BeforeClass
+	public void setUP() throws IOException {
 
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\Lynx User\\eclipse-workspace\\AppiumProject\\src\\main\\java\\GeneralStore\\Config\\data.properties");
-		String ipAddress = System.getProperty("ipAddress") != null ? System.getProperty("ipAddress")
-				: prop.getProperty("port");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/GeneralStore/Config/data.properties");
+		String ipAddress = System.getProperty("ipAddress") != null ? System.getProperty("ipAddress") : prop.getProperty("port");
 		prop.load(fis);
-		// String ipAddress = prop.getProperty("ipAddress");
+
 		String port = prop.getProperty("port");
 		build = prop.getProperty("build");
 
@@ -36,15 +34,16 @@ public class BaseTest extends BaseTestUtils {
 
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName(prop.getProperty("AndroidDeviceNames"));
-		options.setApp("C:\\Users\\Lynx User\\eclipse-workspace\\AppiumProject\\src\\main\\java\\resources\\" + build);
+		options.setApp(System.getProperty("user.dir") + "/src/main/java/resources/" + build);
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	}
 
-	@AfterClass(alwaysRun = true)
-	public static void tearDown() {
-		driver.quit();
-		service.stop();
+	@AfterClass
+	public void tearDown() {
+		if (driver != null) {
+			driver.quit();
+		}
 	}
 }
