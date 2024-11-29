@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-25T13:25:11 EET" name="Default suite" finished-at="2024-11-25T13:25:52 EET" duration-ms="41245">
+  <suite started-at="2024-11-27T14:19:46 EET" name="Default suite" finished-at="2024-11-27T14:20:39 EET" duration-ms="52456">
     <groups>
     </groups>
-    <test started-at="2024-11-25T13:25:11 EET" name="Default test" finished-at="2024-11-25T13:25:52 EET" duration-ms="41245">
+    <test started-at="2024-11-27T14:19:46 EET" name="Default test" finished-at="2024-11-27T14:20:39 EET" duration-ms="52456">
       <class name="GeneralStore.TestCases.TestExecution">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:GeneralStore.TestCases.TestExecution@413d1baf]" started-at="2024-11-25T13:25:11 EET" name="setUP" finished-at="2024-11-25T13:25:19 EET" duration-ms="8884" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:GeneralStore.TestCases.TestExecution@6743e411]" started-at="2024-11-27T14:19:46 EET" name="setUP" finished-at="2024-11-27T14:19:59 EET" duration-ms="13337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="formPage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:GeneralStore.TestCases.TestExecution@413d1baf]" started-at="2024-11-25T13:25:19 EET" name="formPage" data-provider="getData" finished-at="2024-11-25T13:25:33 EET" duration-ms="14006" status="PASS">
+        <test-method signature="formPage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:GeneralStore.TestCases.TestExecution@6743e411]" started-at="2024-11-27T14:20:00 EET" name="formPage" data-provider="getData" finished-at="2024-11-27T14:20:18 EET" duration-ms="18405" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,15 +32,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formPage -->
-        <test-method signature="productCatalogue()[pri:0, instance:GeneralStore.TestCases.TestExecution@413d1baf]" started-at="2024-11-25T13:25:33 EET" name="productCatalogue" finished-at="2024-11-25T13:25:49 EET" depends-on-methods="GeneralStore.TestCases.TestExecution.formPage" duration-ms="15321" status="PASS">
+        <test-method signature="productCatalogue()[pri:0, instance:GeneralStore.TestCases.TestExecution@6743e411]" started-at="2024-11-27T14:20:18 EET" name="productCatalogue" finished-at="2024-11-27T14:20:35 EET" depends-on-methods="GeneralStore.TestCases.TestExecution.formPage" duration-ms="17045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productCatalogue -->
-        <test-method signature="cartPage()[pri:0, instance:GeneralStore.TestCases.TestExecution@413d1baf]" started-at="2024-11-25T13:25:49 EET" name="cartPage" finished-at="2024-11-25T13:25:51 EET" depends-on-methods="GeneralStore.TestCases.TestExecution.productCatalogue" duration-ms="1847" status="PASS">
+        <test-method signature="cartPage()[pri:0, instance:GeneralStore.TestCases.TestExecution@6743e411]" started-at="2024-11-27T14:20:35 EET" name="cartPage" finished-at="2024-11-27T14:20:37 EET" depends-on-methods="GeneralStore.TestCases.TestExecution.productCatalogue" duration-ms="2111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GeneralStore.TestCases.TestExecution@413d1baf]" started-at="2024-11-25T13:25:51 EET" name="tearDown" finished-at="2024-11-25T13:25:52 EET" duration-ms="1138" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GeneralStore.TestCases.TestExecution@6743e411]" started-at="2024-11-27T14:20:37 EET" name="tearDown" finished-at="2024-11-27T14:20:39 EET" duration-ms="1492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
