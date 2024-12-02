@@ -22,7 +22,7 @@ https://docs.google.com/spreadsheets/d/1J8PG6RX7NOmLY7BsYBn9He6ZeVsJumMPcQ-YbOtw
 		BaseTestUtils.java: Method to start the Appium server with a specified IP address and port, using a local Appium driver service
 		ExtentReporter.java: Configures and generates Extent Reports with a standardized format for test results. 
 		Listeners.java: Implements TestNG listeners to track test events and log results into the Extent Report.	
-		data.properties: A properties file where you can set the ip address, port, device name, build name and the Appium main JavaScript file ```main.js``` path.
+		data.properties: A properties file where you can set the ip address, port, device name, build name and the Appium main JavaScript file main.js path.
 
 	•AppiumProject/src/test/java/GeneralStore/TestCases
 		This directory contains the test case classes responsible for executing the test logic. Each class corresponds to specific scenarios and uses the page objects to carry out the tests.
