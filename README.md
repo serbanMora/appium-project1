@@ -2,6 +2,10 @@
 
 This personal project is focused on automating test cases for General Store, a demo e-commerce android app, using Appium with the Page Object Model (POM) design pattern and TestNG. It includes various page objects for interacting with different sections of the application, a configuration class for setting up the WebDriver, and test cases for executing the automated tests.
 
+To run the tests, navigate to your project directory and execute the following command:
+	```mvn test```
+ This will trigger Maven to compile the project and run the test cases defined in the project.
+
 •Test Cases:
 https://docs.google.com/spreadsheets/d/1J8PG6RX7NOmLY7BsYBn9He6ZeVsJumMPcQ-YbOtwo8w/edit?pli=1&gid=0#gid=0
 
@@ -20,7 +24,7 @@ https://docs.google.com/spreadsheets/d/1J8PG6RX7NOmLY7BsYBn9He6ZeVsJumMPcQ-YbOtw
 		Listeners.java: Implements TestNG listeners to track test events and log results into the Extent Report.	
 		data.properties: A properties file where you can set the ip address, port, device name and build name.
 
-	•/AppiumProject/src/main/java/GeneralStore/TestCases
+	•AppiumProject/src/test/java/GeneralStore/TestCases
 		This directory contains the test case classes responsible for executing the test logic. Each class corresponds to specific scenarios and uses the page objects to carry out the tests.
 		TestExecution.java: The main class that contains the execution logic for running the tests. It integrates the page objects and performs actions in sequence to test the application.
 
