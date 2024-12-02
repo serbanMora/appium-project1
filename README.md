@@ -25,4 +25,4 @@ https://docs.google.com/spreadsheets/d/1J8PG6RX7NOmLY7BsYBn9He6ZeVsJumMPcQ-YbOtw
 		TestExecution.java: The main class that contains the execution logic for running the tests. It integrates the page objects and performs actions in sequence to test the application.
 
 	•/AppiumProject/REPORTS
-		The index.html file will be generated here  will be generated here with test execution results, including pass/fail status and screenshots for failed tests.
+		The index.html file will be generated with test execution results, including pass/fail status and screenshots for failed tests.
