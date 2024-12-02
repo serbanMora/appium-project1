@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-02T16:23:01 EET" name="Suite" finished-at="2024-12-02T16:23:55 EET" duration-ms="53777">
+  <suite started-at="2024-12-02T17:27:48 EET" name="Suite" finished-at="2024-12-02T17:28:38 EET" duration-ms="49766">
     <groups>
     </groups>
-    <test started-at="2024-12-02T16:23:01 EET" name="Test 1" finished-at="2024-12-02T16:23:55 EET" duration-ms="53777">
+    <test started-at="2024-12-02T17:27:48 EET" name="Test 1" finished-at="2024-12-02T17:28:38 EET" duration-ms="49766">
       <class name="GeneralStore.TestCases.TestExecution">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:GeneralStore.TestCases.TestExecution@5965d37]" started-at="2024-12-02T16:23:01 EET" name="setUP" finished-at="2024-12-02T16:23:19 EET" duration-ms="18005" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:GeneralStore.TestCases.TestExecution@5965d37]" started-at="2024-12-02T17:27:48 EET" name="setUP" finished-at="2024-12-02T17:28:05 EET" duration-ms="16590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="formPage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:GeneralStore.TestCases.TestExecution@5965d37]" started-at="2024-12-02T16:23:19 EET" name="formPage" data-provider="getData" finished-at="2024-12-02T16:23:34 EET" duration-ms="14847" status="PASS">
+        <test-method signature="formPage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:GeneralStore.TestCases.TestExecution@5965d37]" started-at="2024-12-02T17:28:05 EET" name="formPage" data-provider="getData" finished-at="2024-12-02T17:28:20 EET" duration-ms="14984" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,15 +32,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formPage -->
-        <test-method signature="productCatalogue()[pri:0, instance:GeneralStore.TestCases.TestExecution@5965d37]" started-at="2024-12-02T16:23:34 EET" name="productCatalogue" finished-at="2024-12-02T16:23:51 EET" depends-on-methods="GeneralStore.TestCases.TestExecution.formPage" duration-ms="17206" status="PASS">
+        <test-method signature="productCatalogue()[pri:0, instance:GeneralStore.TestCases.TestExecution@5965d37]" started-at="2024-12-02T17:28:20 EET" name="productCatalogue" finished-at="2024-12-02T17:28:35 EET" depends-on-methods="GeneralStore.TestCases.TestExecution.formPage" duration-ms="15342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productCatalogue -->
-        <test-method signature="cartPage()[pri:0, instance:GeneralStore.TestCases.TestExecution@5965d37]" started-at="2024-12-02T16:23:51 EET" name="cartPage" finished-at="2024-12-02T16:23:53 EET" depends-on-methods="GeneralStore.TestCases.TestExecution.productCatalogue" duration-ms="2344" status="PASS">
+        <test-method signature="cartPage()[pri:0, instance:GeneralStore.TestCases.TestExecution@5965d37]" started-at="2024-12-02T17:28:35 EET" name="cartPage" finished-at="2024-12-02T17:28:37 EET" depends-on-methods="GeneralStore.TestCases.TestExecution.productCatalogue" duration-ms="1990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GeneralStore.TestCases.TestExecution@5965d37]" started-at="2024-12-02T16:23:53 EET" name="tearDown" finished-at="2024-12-02T16:23:55 EET" duration-ms="1306" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GeneralStore.TestCases.TestExecution@5965d37]" started-at="2024-12-02T17:28:37 EET" name="tearDown" finished-at="2024-12-02T17:28:38 EET" duration-ms="788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
