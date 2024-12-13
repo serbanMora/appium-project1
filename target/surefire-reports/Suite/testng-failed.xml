@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="GeneralStore.Config.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test 1(failed)" verbose="0">
+    <classes>
+      <class name="GeneralStore.TestCases.TestExecution">
+        <methods>
+          <include name="setUP"/>
+          <include name="formPage"/>
+          <include name="productCatalogue"/>
+          <include name="cartPage"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GeneralStore.TestCases.TestExecution -->
+    </classes>
+  </test> <!-- Test 1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
