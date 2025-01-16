@@ -11,8 +11,8 @@
           <include name="setUP"/>
           <include name="formPage"/>
           <include name="productCatalogue"/>
-          <include name="cartPage"/>
           <include name="tearDown"/>
+          <include name="cartPage"/>
         </methods>
       </class> <!-- GeneralStore.TestCases.TestExecution -->
     </classes>
