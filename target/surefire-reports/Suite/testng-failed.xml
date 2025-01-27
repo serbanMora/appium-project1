@@ -9,8 +9,8 @@
       <class name="GeneralStore.TestCases.TestExecution">
         <methods>
           <include name="setUP"/>
-          <include name="formPage"/>
           <include name="productCatalogue"/>
+          <include name="formPage"/>
           <include name="tearDown"/>
           <include name="cartPage"/>
         </methods>
