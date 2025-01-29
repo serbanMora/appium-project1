@@ -19,7 +19,7 @@ public class TestExecution extends BaseTest {
 	String gender = "male";
 	String country = "Argentina";
 	
-	@Test (dataProvider = "getData", alwaysRun = true, enabled = true)
+	@Test (dataProvider = "getData")
 	public void formPage(String name, String gender, String country) {
 		formPage = new FormPage(driver);
 		formPage.setName(name);
@@ -28,7 +28,7 @@ public class TestExecution extends BaseTest {
 		formPage.submitForm();
 	}
 
-	@Test (alwaysRun = true, dependsOnMethods = "formPage", enabled = true)
+	@Test (dependsOnMethods = "formPage")
 	public void productCatalogue() {
 		productCatalogue = new ProductCatalogue(driver);
 		productCatalogue.addProductToCart("Air Jordan 4 Retro");
@@ -36,7 +36,7 @@ public class TestExecution extends BaseTest {
 		productCatalogue.goToCartPage();
 	}
 	
-	@Test (alwaysRun = true, dependsOnMethods = "productCatalogue", enabled = true)
+	@Test (dependsOnMethods = "productCatalogue")
 	public void cartPage() {
 		cartPage = new CartPage(driver);
 		Assert.assertEquals(cartPage.getPriceSum(), cartPage.getTotalSum());
