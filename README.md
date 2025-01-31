@@ -6,7 +6,7 @@ To run the tests, navigate to your project directory and execute the following c
 	```mvn test```, this will trigger Maven to compile the project and run the test cases defined in the project.
 
 * Test Cases execution demo on Android Studio Emulator:
-[![automation run in chrome](assets/demo.png)](https://www.youtube.com/shorts/mGmTriBCuTw)
+[![automation run in chrome](assets/demo.png)](https://www.youtube.com/watch?v=ILKx52wUgwY)
 
 # Test Cases containing scenarios, steps, automation data, ER/AR and statuses can be found here:
 * [Test Cases Spreadsheet Document](https://docs.google.com/spreadsheets/d/1J8PG6RX7NOmLY7BsYBn9He6ZeVsJumMPcQ-YbOtwo8w/edit?pli=1&gid=0#gid=0)
