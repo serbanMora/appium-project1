@@ -1,10 +1,12 @@
 # Appium Project Overview
 
-This personal project is focused on automating test cases for General Store, a demo e-commerce android app, using Appium with the Page Object Model (POM) design pattern and TestNG. It includes various page objects for interacting with different sections of the application, a configuration class for setting up the WebDriver, and test cases for executing the automated tests.
+This personal project is focused on automating test cases for General Store, a demo e-commerce android app, using Appium with the Page Object Model (POM) design pattern and TestNG. It includes various page objects for interacting with different sections of the application, a configuration class for setting up the Android Driver, and test cases for executing the automated tests.
 
 To run the tests, navigate to your project directory and execute the following command:
-	```mvn test```
- This will trigger Maven to compile the project and run the test cases defined in the project.
+	```mvn test```, this will trigger Maven to compile the project and run the test cases defined in the project.
+
+* Test Cases execution demo on Android Studio Emulator:
+[![automation run in chrome](assets/demo.png)](https://www.youtube.com/shorts/mGmTriBCuTw)
 
 # Test Cases containing scenarios, steps, automation data, ER/AR and statuses can be found here:
 * [Test Cases Spreadsheet Document](https://docs.google.com/spreadsheets/d/1J8PG6RX7NOmLY7BsYBn9He6ZeVsJumMPcQ-YbOtwo8w/edit?pli=1&gid=0#gid=0)
@@ -38,5 +40,7 @@ This directory contains the test case classes responsible for executing the test
 
 * ```TestExecution.java```: The main class that contains the execution logic for running the tests. It integrates the page objects and performs actions in sequence to test the application.
 
-## /AppiumProject/REPORTS
-The ```index.html``` file will be generated with test execution results, including pass/fail status and screenshots for failed tests.
+## /AppiumProject/REPORTS\index.html
+Extent Reports library is used to generate a report document, the ```index.html``` file will be generated with test execution results, including pass/fail status and screenshots for failed tests.
+![Extent Report Screenshot](assets/extent-1.png)
+![Extent Report Screenshot](assets/extent-2.png)
