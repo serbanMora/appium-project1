@@ -5,11 +5,10 @@
 	<listeners>
 		<listener class-name="GeneralStore.Config.Listeners" />
 	</listeners>
-	
+
 	<test thread-count="5" name="Test 1">
 		<classes>
-			<class name="GeneralStore.TestCases.TestExecution"/>
+			<class name="GeneralStore.TestCases.TestExecution" />
 		</classes>
-	</test> <!--Test -->
-	
-</suite> <!-- Suite -->
+	</test>
+</suite> 
